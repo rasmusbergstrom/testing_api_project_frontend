@@ -1,0 +1,67 @@
+.JokeView {
+    text-align: center;
+    background-color: whitesmoke;
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+  }
+
+  .jokes {
+    display:flexbox;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    margin-left: 10px;
+  }
+
+  
+  .joke {
+    background: wheat;
+    position: relative;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    margin-left: 26%;
+    width: 47%;
+    color: black;
+    flex-basis: width;
+  }
+
+  .container{
+    display: flex;
+    width: 5%;
+    height: 20px;
+    padding-left: 48%;
+  }
+  .fetch-button-jokeview {
+       background-color:lightblue;
+       min-width: 150px;
+       margin-bottom: 30px;
+       margin-left: 20px;
+       margin: 20px;
+       padding: 10px;
+       padding-left: 100;
+       padding-bottom: 40;
+       font-size: 1em;
+       border-radius: 5px;
+       cursor: pointer;
+       background-color: lightblue;
+       border: none;
+       color: rgb(15, 66, 54);
+       transition: all 0.5s;
+   }
+
+   .button-div {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    align-items: center;
+  
+  }
+  
+

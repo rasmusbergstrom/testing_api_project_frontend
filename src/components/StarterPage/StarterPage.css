@@ -1,0 +1,84 @@
+.StarterPage {
+  text-align: center;
+  background-color: whitesmoke;
+  margin-top: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
+  border-radius: 10px;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 25px;
+  }
+
+  .Jokes_starterPage {
+      background-color:transparent;
+      height: 250px;
+      border-radius: 10px;
+      margin-top: 20px;
+      margin-left: 200px;
+      margin-right: 200px;
+  }
+
+  .container{
+    display: flex;
+    width: 5%;
+    height: 20px;
+    padding-left: 48%;
+   
+  }
+  .container-down{
+    display: flex;
+    width: 5%;
+    height: 20px;
+    padding-left: 48%;
+    padding-top: 10px;
+    margin-bottom: 20px;
+   
+  }
+  .thumbs-up {
+     
+      padding-top: 22px;
+        flex: 1;
+  }
+  .text-up {
+        
+        flex: 2;
+  }
+
+  .thumbs-down {
+     
+      padding-top: 22px;
+        flex: 1;
+  }
+  .text-down {
+        
+        flex: 2;
+  }
+  
+  .fetch-button {
+    background-color:lightblue;
+    min-width: 150px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin: 20px;
+    padding: 10px;
+    padding-left: 100;
+    padding-bottom: 40;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: darkcyan;
+    border: none;
+    color: rgb(15, 66, 54);
+    transition: all 0.5s;
+}
+
+.button-div {
+ display: flex;
+ position: absolute;
+ left: 50%;
+ transform: translate(-50%);
+ align-items: center;
+
+}
