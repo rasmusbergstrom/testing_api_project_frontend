@@ -13,9 +13,9 @@ const [jokes, setJokes] = useState(null);
   const [singleJoke, setJoke] = useState(null);
   const [ amount, setAmount] = useState('');
   const [ category, setCategory] = useState('');
-  const apiURL = `https://127.0.0.1:44318/Joke/${amount}`;
-  const apiSingleURL = "https://127.0.0.1:44318/Joke/1";
-  const apiURLcategory = `https://127.0.0.1:44318/Joke/${category}`
+  const apiURL = `https://127.0.0.1:44351/Joke/${amount}`;
+  const apiSingleURL = "https://127.0.0.1:44351/Joke/1";
+  const apiURLcategory = `https://127.0.0.1:44351/Joke/${category}`
 
   const fetchList = async () => {
       const response = await axios.get(apiURL)

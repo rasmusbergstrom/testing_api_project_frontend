@@ -16,10 +16,10 @@ function StarterPage(){
   const [searchedJoke, setSearchedJoke] = useState(null);
   const [ searchId, setSearchId] = useState('');
   const [ likeId, setLikeId] = useState('');
-  const apiURL_v2 = `https://127.0.0.1:44318/Jokev2`;
-  //const apiURLcategory = `https://127.0.0.1:44318/Joke/${category}`
-  const searchSpecificJoke = `https://127.0.0.1:44318/Jokev2/${searchId}?Id=${searchId}`
-  const likeJokeURL = `https://127.0.0.1:44318/Jokev2?Id=${searchId}`
+  const apiURL_v2 = `https://127.0.0.1:44351/Jokev2`;
+  
+  const searchSpecificJoke = `https://127.0.0.1:44351/Jokev2/${searchId}?Id=${searchId}`
+  const likeJokeURL = `https://127.0.0.1:44351/Jokev2?Id=${searchId}`
 
 
 
@@ -37,8 +37,8 @@ const likeJoke = async () => {
 const response = singleJoke?.id
 
 console.log(response);
-const posting = axios.post(`https://127.0.0.1:44318/Jokev2?Id=${response}`)
-const reload = await axios.get(`https://127.0.0.1:44318/Jokev2/${response}?Id=${response}`)
+const posting = axios.post(`https://127.0.0.1:44351/Jokev2?Id=${response}`)
+const reload = await axios.get(`https://127.0.0.1:44351/Jokev2/${response}?Id=${response}`)
 setJoke(reload.data);
 console.log(reload);
 console.log(posting)
@@ -49,8 +49,8 @@ const dislikeJoke = async () => {
   const response = singleJoke?.id
   
   console.log(response);
-  axios.post(`https://127.0.0.1:44318/Jokev2/action?Id=${response}`)
-  const reload = await axios.get(`https://127.0.0.1:44318/Jokev2/${response}?Id=${response}`)
+  axios.post(`https://127.0.0.1:44351/Jokev2/action?Id=${response}`)
+  const reload = await axios.get(`https://127.0.0.1:44351/Jokev2/${response}?Id=${response}`)
   setJoke(reload.data);
   
   }

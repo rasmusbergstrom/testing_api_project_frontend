@@ -14,7 +14,7 @@ function FootballTracker(){
 const [player, setPlayer] = useState(null);
 const [searchPlayerId, setSearchPlayerid] = useState('');
 
-const SinglePlayerSearch = `https://127.0.0.1:44318/api/Football/${searchPlayerId}`
+const SinglePlayerSearch = `https://127.0.0.1:44351/api/Football/${searchPlayerId}`
   
 const fetchPlayer = async () => {
       const response = await axios.get(SinglePlayerSearch)
